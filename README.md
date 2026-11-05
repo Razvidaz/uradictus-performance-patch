@@ -4,8 +4,6 @@ A performance patch for **Europa Universalis IV 1.37.5** on Windows. It makes lo
 freezes when you click windows and armies, shorter month-start stutters, smoother pictures on busy days, and a faster
 boot. It works in single player and multiplayer. Other players don't need it.
 
-> Unofficial. Not made or supported by Paradox Interactive.
-
 ## Download
 
 Get the newest `uradictus-performance-patch-1.37.5.zip` from the
@@ -91,3 +89,7 @@ Close EU4 and delete `version.dll`, `eu4perf.log` and `eu4perf_textures.txt` fro
 ## Problems
 
 Open an [issue](../../issues) with what happened, your game version, and the `eu4perf.log` file from the game folder.
+
+
+
+> Unofficial. Not made or supported by Paradox Interactive.
