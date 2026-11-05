@@ -6,9 +6,7 @@ boot. It works in single player and multiplayer. Other players don't need it.
 
 ## ⬇️ [Download the patch (uradictus-performance-patch-1.37.5.zip)](https://github.com/Razvidaz/uradictus-performance-patch/releases/latest/download/uradictus-performance-patch-1.37.5.zip)
 
-The link always gets the newest version. The zip holds `version.dll` and `README.txt`. Don't use GitHub's green
-**Code > Download ZIP** button or the **Source code** files on the release page: they only contain this readme.
-Older versions and checksums are on the [Releases](../../releases) page.
+The link always gets the newest version. The zip holds `version.dll` and `README.txt`.
 
 ## Requirements
 
