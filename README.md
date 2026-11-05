@@ -9,7 +9,7 @@ boot. It works in single player and multiplayer. Other players don't need it.
 ## Download
 
 Get the newest `uradictus-performance-patch-1.37.5.zip` from the
-[Releases](../../releases) page. The first release is still being prepared.
+[Releases](../../releases/latest) page.
 
 ## Requirements
 
@@ -36,8 +36,9 @@ A small window shows on top of the game:
 
 - **Performance ON / OFF:** switches every speed-up on or off during play. A change waits until the current game day
   has finished. The patch starts **on** every time the game launches.
-- **Speed 4:** how many days per second game speed 4 runs. Only the host can change it; for everyone else it's greyed
-  out, because clients always follow the host's pace.
+- **Speed 4:** how many days per second game speed 4 runs, from 2.0 to 5.0 (5.0 is the game's own). It starts at 2.5
+  every launch. Only the host, or you in single player, can change it; for a multiplayer client it's greyed out,
+  because clients always follow the host's pace.
 - **F10** closes or opens this window. Closing it doesn't switch anything off.
 
 Drag the window by its title to move it. If exclusive fullscreen hides it, use windowed or borderless mode.
@@ -73,9 +74,18 @@ Measured in long games on 1.37.5 with the patch on:
 - The patch never sends orders and never changes the game's rules. Its calculations give the game's own answers.
 - If you ever see an out-of-sync that you think the patch caused, switch Performance off and report it (see below).
 
+## Files it writes
+
+Both in the game folder:
+
+- `eu4perf.log`: what the patch did this session.
+- `eu4perf_textures.txt`: the textures to load in advance. It starts with a list made on the Tuesday HAB mod and adjusts
+  to your game as you play: textures your game opens are added, names your game doesn't have are removed. Delete it
+  to start over.
+
 ## Remove
 
-Close EU4 and delete `version.dll` (and `eu4perf.log` if you like) from the game folder. If you moved another
+Close EU4 and delete `version.dll`, `eu4perf.log` and `eu4perf_textures.txt` from the game folder. If you moved another
 `version.dll` out before installing, put it back. Your game files and saves are never changed.
 
 ## Problems
