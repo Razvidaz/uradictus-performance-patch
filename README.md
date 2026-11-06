@@ -24,25 +24,6 @@ The link always gets the newest version. The zip holds `version.dll` and `README
    one can be installed.
 4. Start the game as usual.
 
-## If your antivirus deletes it
-
-Some antivirus programs flag `version.dll` because it is unsigned, has no download history yet, and loads itself into
-the game, which is also what some malware does. If it disappears or is blocked:
-
-1. **Windows Defender / Windows Security:**
-   - Already deleted: open **Windows Security** > **Virus & threat protection** > **Protection history**, click the
-     entry for `version.dll`, then **Actions** > **Allow on device** (or **Restore**).
-   - So it doesn't happen again: **Virus & threat protection** > **Manage settings** (under Virus & threat protection
-     settings) > **Exclusions** > **Add or remove exclusions** > **Add an exclusion** > **File**, and pick
-     `version.dll` in the game folder.
-2. **Other antivirus** (Avast, AVG, Bitdefender, Norton, Kaspersky and others): open its settings, find
-   **Exceptions** or **Exclusions**, and add the full path of the file, usually
-   `C:\Program Files (x86)\Steam\steamapps\common\Europa Universalis IV\version.dll`. If it was moved to quarantine,
-   restore it from there first.
-3. If your browser blocks the download, choose **Keep** in its downloads list.
-
-Exclude only this one file, not the whole game folder or drive.
-
 ## Use
 
 A small window shows on top of the game:
@@ -90,6 +71,25 @@ Switched off and on in one session (1764 save, speed 3):
 | Longest frame | 651 ms | 48 ms |
 | Selecting an army | 220-651 ms | 20-38 ms |
 | Worst frame at a month start | 119-200 ms | 30-48 ms |
+
+## If your antivirus deletes it
+
+Some antivirus programs flag `version.dll` because it is unsigned, has no download history yet, and loads itself into
+the game, which is also what some malware does. If it disappears or is blocked:
+
+1. **Windows Defender / Windows Security:**
+   - Already deleted: open **Windows Security** > **Virus & threat protection** > **Protection history**, click the
+     entry for `version.dll`, then **Actions** > **Allow on device** (or **Restore**).
+   - So it doesn't happen again: **Virus & threat protection** > **Manage settings** (under Virus & threat protection
+     settings) > **Exclusions** > **Add or remove exclusions** > **Add an exclusion** > **File**, and pick
+     `version.dll` in the game folder.
+2. **Other antivirus** (Avast, AVG, Bitdefender, Norton, Kaspersky and others): open its settings, find
+   **Exceptions** or **Exclusions**, and add the full path of the file, usually
+   `C:\Program Files (x86)\Steam\steamapps\common\Europa Universalis IV\version.dll`. If it was moved to quarantine,
+   restore it from there first.
+3. If your browser blocks the download, choose **Keep** in its downloads list.
+
+Exclude only this one file, not the whole game folder or drive.
 
 ## Multiplayer
 
