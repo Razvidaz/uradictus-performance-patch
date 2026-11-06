@@ -29,19 +29,17 @@ The link always gets the newest version. The zip holds `version.dll` and `README
 Some antivirus programs flag `version.dll` because it is unsigned, has no download history yet, and loads itself into
 the game, which is also what some malware does. If it disappears or is blocked:
 
-1. Check that the file is the real one: in PowerShell, run `Get-FileHash version.dll` in the folder where it is and
-   compare the result with the SHA-256 on the [release page](../../releases/latest).
-2. **Windows Defender / Windows Security:**
+1. **Windows Defender / Windows Security:**
    - Already deleted: open **Windows Security** > **Virus & threat protection** > **Protection history**, click the
      entry for `version.dll`, then **Actions** > **Allow on device** (or **Restore**).
    - So it doesn't happen again: **Virus & threat protection** > **Manage settings** (under Virus & threat protection
      settings) > **Exclusions** > **Add or remove exclusions** > **Add an exclusion** > **File**, and pick
      `version.dll` in the game folder.
-3. **Other antivirus** (Avast, AVG, Bitdefender, Norton, Kaspersky and others): open its settings, find
+2. **Other antivirus** (Avast, AVG, Bitdefender, Norton, Kaspersky and others): open its settings, find
    **Exceptions** or **Exclusions**, and add the full path of the file, usually
    `C:\Program Files (x86)\Steam\steamapps\common\Europa Universalis IV\version.dll`. If it was moved to quarantine,
    restore it from there first.
-4. If your browser blocks the download, choose **Keep** in its downloads list.
+3. If your browser blocks the download, choose **Keep** in its downloads list.
 
 Exclude only this one file, not the whole game folder or drive.
 
