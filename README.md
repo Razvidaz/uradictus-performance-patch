@@ -46,7 +46,8 @@ Drag the window by its title to move it. If exclusive fullscreen hides it, use w
 - More pictures during long game days, the monthly ranking, the monthly country and unit steps, and after peace deals.
 - Textures and music: loaded before you need them and kept loaded, so windows open faster the first time and stay fast.
 - Faster file lookups at boot and while playing.
-- Big armies and fleets: unit panels, multi-army selections, fleet movement estimates, trade mission node lists and
+- Big armies and fleets: unit panels, multi-army selections, fleet movement estimates, trade mission node lists,
+  route checks while you hover the map with a unit selected (up to ~130 ms per frame with a big army before), and
   closing windows.
 - A fix for a game bug where open province windows leak interface elements, which slows long sessions down.
 - Faster game calculations: army drill in expenses, reinforcement and morale, fleet speed, modifier merging, AI war goals
