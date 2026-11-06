@@ -65,6 +65,15 @@ Measured in long games on 1.37.5 with the patch on:
 | Selecting a 3000-regiment army | 360-455 ms | 27-45 ms |
 | Month-start ranking freeze | 235-260 ms | 58-106 ms |
 
+Switched off and on in one session (1764 save, speed 3):
+
+| | Off | On |
+|---|---|---|
+| Average fps | 36 | 81 |
+| Longest frame | 651 ms | 48 ms |
+| Selecting an army | 220-651 ms | 20-38 ms |
+| Worst frame at a month start | 119-200 ms | 30-48 ms |
+
 ## Multiplayer
 
 - Everyone can install it, or only some players. Players without it aren't affected.
