@@ -47,11 +47,14 @@ Drag the window by its title to move it. If exclusive fullscreen hides it, use w
   route checks while you hover the map with a unit selected (up to ~130 ms per frame with a big army before), and
   closing windows.
 - A fix for a game bug where open province windows leak interface elements, which slows long sessions down.
-- Faster game calculations: army drill in expenses, reinforcement and morale, fleet speed, modifier merging, AI war goals
-  and invasion planning. Each one gives the same answers as the game and checks itself against the game's own code
-  now and then; a difference turns it off.
-- Multiplayer: Steam messages are sent without the game's extra buffering, and clients skip rebuilding the parts of
-  the daily sync check that can't cause an out-of-sync.
+- Single player: the game keeps drawing while the AI thinks each day, instead of freezing until the slowest country is
+  done (new in 1.4).
+- Faster game calculations: army drill in expenses, reinforcement and morale, fleet speed, modifier merging, AI war goals,
+  AI threat lookups (new in 1.4) and invasion planning. Each one gives the same answers as the game and checks itself
+  against the game's own code now and then; a difference turns it off.
+- Multiplayer: clients send their own orders without the game's extra Steam buffering and skip rebuilding the parts of
+  the daily sync check that can't cause an out-of-sync. The host sends the game's own way, and from 1.4 works out and
+  sends only the part of that daily sync list that can start an out-of-sync (see [Hosting](#hosting)).
 
 Measured in long games on 1.37.5 with the patch on:
 
@@ -96,6 +99,14 @@ Exclude only this one file, not the whole game folder or drive.
 - Everyone can install it, or only some players. Players without it aren't affected.
 - The patch never sends orders and never changes the game's rules. Its calculations give the game's own answers.
 - If you ever see an out-of-sync that you think the patch caused, switch Performance off and report it (see below).
+
+### Hosting
+
+When you host, the daily sync list you send carries only the numbers that can start an out-of-sync; the other 137 are
+sent as 0. This saves the host up to about 80 ms every game day in big games, and the host sets everyone's pace. Other
+players don't need the patch. The cost: if a real out-of-sync happens, its report can't show which part of the game
+split first. After any player reports an out-of-sync, the full list goes out for the rest of that session. Tell the
+other players before you host with it.
 
 ## Files it writes
 
